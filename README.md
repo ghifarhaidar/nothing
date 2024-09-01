@@ -69,4 +69,4 @@
 mlflow models serve -m SeqModel_with_wrapper --port 5000 --no-conda
 ```
 
-وبذلك نستطيع الحصول غلى اقتراحات في المنصة باستخدام _REST API_.
+وبذلك نستطيع الحصول على اقتراحات في المنصة باستخدام _REST API_.
