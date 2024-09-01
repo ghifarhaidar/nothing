@@ -16,7 +16,7 @@
 تم الحصول على الرماز البرحمي لمنصة OpenCart من الموقع الرسي للمنصة.
 المجلد الرئيسي له هو مجلد upload.
 
-الشمروع المنفصل الذي يتم به تدريب النموذج موجود في المجلد الرئيسي ml.
+المشروع المنفصل الذي يتم به تدريب النموذج موجود في المجلد الرئيسي ml.
 
 ### تفاصيل الملفات والمجلدات في قسم إنشاء النموذج
 
@@ -32,15 +32,23 @@
 ## بيانات التدريب
 
 بيانات التدريب تتكون من ملفين نصيين json
+
 الملف الأول يحوي معلومات عامة عن المنتجات التي يوفرها المتجر الالكتروني ، مثال عنها :
 
 ```
-
 {"ItemID": '1005', "Name": "Gaming Console", "Category": "Electronics", "CategoryID": '2001', "Subcategory": "Gaming", "SubcategoryID": '3005'}
 {"ItemID": '1006', "Name": "DSLR Camera", "Category": "Electronics", "CategoryID": '2001', "Subcategory": "Cameras", "SubcategoryID": '3006'}
 {"ItemID": '1007', "Name": "Bluetooth Speaker", "Category": "Electronics", "CategoryID": '2001', "Subcategory": "Audio", "SubcategoryID": '3004'}
 {"ItemID": '1008', "Name": "Tablet", "Category": "Electronics", "CategoryID": '2001', "Subcategory": "Mobile Devices", "SubcategoryID": '3007'}
+```
 
+الملف الثاني يحوي بيانات تفاعل المستخدمين مع المنتجات في الموقع، مثال عنها:
+
+```
+{"UserID":"user_1","ItemID":1200,"ItemName":"Diecast Car Set","Category":"Toys and Games","CategoryID":2010,"InteractionType":"view","Timestamp":"2020-06-04 10:18:14"}
+{"UserID":"user_1","ItemID":1195,"ItemName":"Toy Helicopter","Category":"Toys and Games","CategoryID":2010,"InteractionType":"view","Timestamp":"2020-06-02 07:47:14"}
+{"UserID":"user_1","ItemID":1195,"ItemName":"Toy Helicopter","Category":"Toys and Games","CategoryID":2010,"InteractionType":"add to cart","Timestamp":"2020-06-02 08:00:14"}
+{"UserID":"user_1","ItemID":1195,"ItemName":"Toy Helicopter","Category":"Toys and Games","CategoryID":2010,"InteractionType":"review 2","Timestamp":"2020-06-02 08:15:14"}
 ```
 
 ## الإعداد والتشغيل
