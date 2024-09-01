@@ -8,7 +8,7 @@
 
 يشمل المشروع المكونات الأساسية التالية:
 
-- منصة OpenCart.
+- منصة [OpenCart](https://www.opencart.com/).
 - مشروع منفصل مخصص لإنشاء نموجذ sli_rec وتدريبه.
 
 ## هيكلية المشروع
@@ -51,4 +51,8 @@
 {"UserID":"user_1","ItemID":1195,"ItemName":"Toy Helicopter","Category":"Toys and Games","CategoryID":2010,"InteractionType":"review 2","Timestamp":"2020-06-02 08:15:14"}
 ```
 
-.
+## النموذج المدرب
+
+تم الحصول على النموذج المدرب من مكتبة [Microsoft Recommenders ](https://github.com/recommenders-team/recommenders).
+
+وتم استخدان نموذج [SLi_Rec](https://github.com/recommenders-team/recommenders/blob/main/examples/00_quick_start/sequential_recsys_amazondataset.ipynb).
